@@ -9,7 +9,7 @@ import ListItemLink from "./ListItemLink";
 import { useState, useEffect } from "react";
 
 const MobileNavbar = () => {
-  const [navOpen, setNavOpen] = useState(false);
+  const [navOpen, setNavOpen] = useState(true);
 
   const closeNav = () => {
     setNavOpen(false);
