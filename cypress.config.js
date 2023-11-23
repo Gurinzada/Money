@@ -1,10 +1,12 @@
-const { defineConfig } = require('cypress')
+const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
+  // Your existing Cypress configuration
   component: {
-    "devServer": {
-        "framework": "react",
-        "bundler": "webpack"
-      }
+    // Your existing component configuration
+    devServer: {
+      framework: 'react',
+      bundler: 'webpack',
+    },
   },
-})
+});
