@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "main": "",
   "scripts": {
-      "server": "cd backend && node server.js",
-      "frontend": "cd frontend && npm run start",
-      "start": "cd backend && npm run prod",
-      "install-client": "cd frontend && npm install",
-      "install-server": "cd backend && npm install"
+    "server": "cd backend && node server.js",
+    "frontend": "cd frontend && npm run start",
+    "start": "cd backend && npm run prod",
+    "install-client": "cd frontend && npm install",
+    "install-server": "cd backend && npm install"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.0"
   }
 }
