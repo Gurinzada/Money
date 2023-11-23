@@ -10,7 +10,7 @@ import { useUser } from "../../queries/user";
 const HomeProfile = () => {
     const { data } = useUser();
     return (
-        <div className={styles.container}>
+        <div className={styles.container} data-cy="containerPerfil">
             <div className={styles.iconContainer}>
                 <BsPerson />
             </div>
@@ -20,7 +20,7 @@ const HomeProfile = () => {
                 </span>
                 <div className={styles.options}>
                     <Link to="profile">
-                        <span>Perfil</span>
+                        <span data-cy="perfilName">Perfil</span>
                         <BsPencil />
                     </Link>
                     <Link to="settings">

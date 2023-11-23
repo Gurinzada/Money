@@ -45,6 +45,7 @@ const Profile = () => {
                             name="firstName"
                             value={firstName}
                             onChange={(e) => setFirstName(e.target.value)}
+                            data-cy="PrimeiroNome"
                         />
                     </div>
                     {/*LAST NAME*/}
@@ -55,10 +56,11 @@ const Profile = () => {
                             name="lastName"
                             value={lastName}
                             onChange={(e) => setLasName(e.target.value)}
+                            data-cy="SegundoNome"
                         />
                     </div>
                     {/*BUTTON*/}
-                    <button onClick={() => UserUpdate(body)}>Atualizar</button>
+                    <button onClick={() => UserUpdate(body)} data-cy="atualizar">Atualizar</button>
                     {userUpdate && (
                         <div style={{ marginTop: "1rem", color: "green"}}>Sucesso</div>
                     )}

@@ -28,7 +28,7 @@ const Navbar = () => {
     }, [isSuccess]);
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} data-cy ="containerNav">
             <div className={styles.logo}>
                 <Link to="/">
                     <div>Money Tracker</div>
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <ul>
                     {/* HOME */}
                     <ListItemLink url="">
-                        <h3>Home</h3>
+                        <h3 data-cy="irHome">Home</h3>
                     </ListItemLink>
 
                     {/* CATEGORIES */}
@@ -72,7 +72,7 @@ const Navbar = () => {
                         </ListItemLink>
                     </div>
                     <ListItemLink url="logout" clickHandler={logoutHandler}>
-                        <h3>Logout</h3>
+                        <h3 data-cy="logouth3">Logout</h3>
                     </ListItemLink>
                 </ul>
             </nav>
