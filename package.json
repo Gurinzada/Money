@@ -10,9 +10,11 @@
     "install-server": "cd backend && npm install"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
     "cypress": "^13.6.0"
   },
   "dependencies": {
+    "faker": "^6.6.6",
     "webpack": "^5.89.0"
   }
 }
