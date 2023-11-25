@@ -45,12 +45,12 @@ const Navbar = () => {
 
                     {/* CATEGORIES */}
                     <ListItemLink url="categories">
-                        <h3>Categorias</h3>
+                        <h3 data-cy="irCat">Categorias</h3>
                     </ListItemLink>
 
                     {/* TRANSACTIONS */}
                     <ListItemLink url="transactions">
-                        <h3>Transações</h3>
+                        <h3 data-cy="irTransacao">Transações</h3>
                     </ListItemLink>
 
                     {/* Wallet */}

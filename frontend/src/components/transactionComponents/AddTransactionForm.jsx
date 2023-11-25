@@ -43,32 +43,36 @@ const AddTransactionForm = () => {
                     placeholder="título"
                     onChange={(e) => setTitle(e.target.value)}
                     value={title}
+                    data-cy="tituloTransacao"
                 />
                 <input 
                     type="number"
                     placeholder="valor"
                     onChange={(e) => setMoney(e.target.value)}
                     value={money}
+                    data-cy="numTransacao"
                 />
                 <input 
                     type="date"
                     placeholder="date"
                     onChange={(e) => setDate(e.target.value)}
                     value={date}
+                    data-cy="dataTransacao"
                 />
                 <input 
                     type="text"
                     placeholder="info"
                     onChange={(e) => setInfo(e.target.value)}
                     value={info}
+                    data-cy="infoTransacao"
                 />
 
                 {/* CATEGORIES */}
                 {ctgs ? (
-                    <select onChange={(e) => setCategory(e.target.value)}>
+                    <select onChange={(e) => setCategory(e.target.value)} data-cy="selecionarCat" id="selecionar">
                         {ctgs.data.map((ctg) => {
                             return (
-                                <option key={ctg.id} value={ctg.id}>
+                                <option key={ctg.id} value={ctg.id} data-cy="optCat" id="opcao">
                                     {ctg.name}
                                 </option>
                             );
@@ -87,6 +91,7 @@ const AddTransactionForm = () => {
                             },
                         });
                     }}
+                    data-cy = "botaoTransaction"
                 >
                     {isLoading ? "Carregando..." : "Salvar"}
                 </button>

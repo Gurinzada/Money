@@ -31,7 +31,7 @@ const DeleteTransactionForm = () => {
     });
     
     return (
-        <div className={styles.container}>
+        <div className={styles.container} data-cy="containerDelete">
             <Title>Apagar Transações</Title>
             <div className={styles.dateSearchFilter}>
                 {/* FIRST DATE */}
@@ -55,7 +55,9 @@ const DeleteTransactionForm = () => {
                     />
                 </div>
                 {/* ACTION BUTTON */}
-                <button className={styles.btn} onClick={() => fetchTransactions()}>
+                <button className={styles.btn} onClick={() => fetchTransactions()}
+                data-cy="exibirTransacao"
+                >
                     Exibir Transações
                 </button>
             </div>
@@ -74,7 +76,7 @@ const DeleteTransactionForm = () => {
                                         date={DateTime.fromISO(tr.date).toISODate()}
                                         title={tr.title}
                                     />
-                                    <div
+                                    <div data-cy = "deleteButao"
                                         className={styles.iconContainer}
                                         style={
                                             transactionsLoading

@@ -64,7 +64,7 @@ CategoryIcon.defaultProps = {
 const TransactionCard = ({ category, date, money, description, title }) => {
     const [visible, setVisible] = useState(false);
     return (
-        <div className={styles.container}>
+        <div className={styles.container} data-cy = "trasacaoCartao">
             <div className={styles.inner}>
                 {/* INFO */}
                 <div className={styles.info}>

@@ -41,7 +41,7 @@ const Categories = () => {
         <MainContainer>
             <Title>Categorias</Title>
 
-            <div className={styles.container}>
+            <div className={styles.container} data-cy="containerCat">
                 {/* FILTERS */}
                 <div className={styles.filters}>
                     {/* TIME SPAN */}
@@ -108,7 +108,9 @@ const Categories = () => {
 
                 {/* RESULTS */}
                 <div className={styles.results}>
-                    <button className={styles.btn} onClick={() => fetchTransactions()}>
+                    <button className={styles.btn} onClick={() => fetchTransactions()}
+                    data-cy="exibirCategoriaResult"
+                    >
                         Exibir Resultados
                     </button>
                     <div className={styles.inner}>

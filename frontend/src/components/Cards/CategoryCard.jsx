@@ -53,7 +53,7 @@ const CategoryCard = ({ category, money }) => {
     }, []);
 
     return (
-        <div className={styles.container} style={{ background: style.background }}>
+        <div className={styles.container} style={{ background: style.background }} data-cy = "cartaoCategoria">
             <div className={styles.inner}>
                 <div className={styles.iconContainer}>{style.icon}</div>
                 <div className={styles.info}>

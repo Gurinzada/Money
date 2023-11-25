@@ -28,7 +28,7 @@ const Home = () => {
 
   return (
     <MainContainer optionClass={styles.container}>
-      <div className={styles.main}>
+      <div className={styles.main} data-cy="containerHome">
         {/* SEARCHBAR */}
         <div className={styles.searchbar}>
           <Searchbar />
