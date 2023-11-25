@@ -22,7 +22,7 @@ const Settings = () => {
 
     return <MainContainer>
         <Title>Configurações</Title>
-        <form action="submit" onSubmit={(e) => e.preventDefault()}>
+        <form action="submit" onSubmit={(e) => e.preventDefault()} data-cy ="formChangePassword">
             <div className={styles.container}>
                 {/* OLD PW */}
                 <div className={styles.password}>
@@ -33,6 +33,7 @@ const Settings = () => {
                         value={oldPw}
                         autoComplete="current-password"
                         onChange={(e) => setOldPw(e.target.value)}
+                        data-cy="oldPassword"
                     />
                 </div>
             </div>
@@ -46,6 +47,7 @@ const Settings = () => {
                         value={newPw}
                         autoComplete="new-password"
                         onChange={(e) => setNewPw(e.target.value)}
+                        data-cy="newPw"
                     />
                 </div>
                 <button
@@ -57,6 +59,7 @@ const Settings = () => {
                             },
                         })
                     }
+                    data-cy="butaoSenha"
                 >
                     {isLoading ? "Carregando" : "Salvar"}
                 </button>

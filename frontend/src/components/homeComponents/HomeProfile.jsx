@@ -15,7 +15,7 @@ const HomeProfile = () => {
                 <BsPerson />
             </div>
             <div className={styles.info}>
-                <span className={styles.welcome}>
+                <span className={styles.welcome} data-cy ="WelcomeName">
                     {data && `Olá ${data?.data.firstName}`}
                 </span>
                 <div className={styles.options}>
@@ -24,7 +24,7 @@ const HomeProfile = () => {
                         <BsPencil />
                     </Link>
                     <Link to="settings">
-                        <span>Configurações</span>
+                        <span data-cy = "settingsProfile">Configurações</span>
                         <IoSettingsOutline />
                     </Link>
                     <Link to="wallet">

@@ -1,5 +1,5 @@
 describe('Login', () => {
-    it('Faz login', () => {
+    it('Faz login e mudar o nome', () => {
         cy.visit('http://localhost:3000/auth');
 
         cy.get('[data-cy=login-form]');
