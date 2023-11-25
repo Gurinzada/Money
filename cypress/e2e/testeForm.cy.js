@@ -70,10 +70,10 @@ describe('Testes de usuario', () => {
   it('Faz Transações', () => {
     cy.visit('http://localhost:3000/auth');
     cy.get('[data-cy=login-email-input]').type(email); // 
-    cy.get('[data-cy=login-password-input]').type(password); //
+    cy.get('[data-cy=login-password-input]').type(newPassword); //
     cy.get('[data-cy=login-button]').click();
-
     cy.url().should('eq', 'http://localhost:3000/');
+
 
 
   });
