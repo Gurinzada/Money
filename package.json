@@ -1,5 +1,5 @@
 {
-  "name": "mybudget",
+  "name": "money",
   "version": "1.0.0",
   "main": "",
   "scripts": {
@@ -7,7 +7,8 @@
     "frontend": "cd frontend && npm run start",
     "start": "cd backend && npm run prod",
     "install-client": "cd frontend && npm install",
-    "install-server": "cd backend && npm install"
+    "install-server": "cd backend && npm install",
+    "cy": "npx cypress open"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.3.1",
